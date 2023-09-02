@@ -10,18 +10,19 @@ class Record:
     name = ""
     phones = []
 
-    def __init__(self, name, phone):
+    def __init__(self, name, phone=None):
         self.name = name
-        self.phones.append(phone)
+        self.phones = [phone] if phone else []
 
     def add(self, phone):
-        pass
+        self.phones.append(phone)
 
     def delete(self, phone):
-        pass
+        self.phones.remove(phone)
 
     def edit(self, phone):
-        pass
+        self.phones.clear()
+        self.phones = phone
 
 
 class Field:
