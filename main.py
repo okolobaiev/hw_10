@@ -18,7 +18,6 @@ class Record:
         self.phones.remove(phone)
 
     def edit(self, phone):
-        self.phones.clear()
         self.phones = phone
 
 
