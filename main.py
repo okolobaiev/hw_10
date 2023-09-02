@@ -10,7 +10,7 @@ class Record:
     name = ""
     phones = []
 
-    def __init__(self, name, phone=[]):
+    def __init__(self, name, phone):
         self.name = name
         self.phones.append(phone)
 
