@@ -17,8 +17,10 @@ class Record:
     def delete(self, phone):
         self.phones.remove(phone)
 
-    def edit(self, phone):
-        self.phones = phone
+    def edit(self, old_phone, new_phone):
+        for ph in self.phones:
+            if ph.value == old_phone:
+                ph.value = new_phone
 
 
 class Field:
